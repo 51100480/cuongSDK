@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "hdSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.10"
   spec.summary      = "A short description of hdSDK."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/51100480/cuongSDK.git", :tag => "main" }
+  spec.source       = { :git => "https://github.com/51100480/cuongSDK.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,8 +93,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "hdSDK/hdSDKTests"
-   spec.source_files  = "hdSDK/**/*.{h,m,swift}"
+   spec.source_files  = "hdSDK/hdSDK/*.{h,m,swift}"
+
 
   # spec.public_header_files = "Classes/**/*.h"
 

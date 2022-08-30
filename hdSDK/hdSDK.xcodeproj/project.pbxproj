@@ -17,6 +17,9 @@
 		04748EE128BDF82E009C9042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04748EDF28BDF82E009C9042 /* Main.storyboard */; };
 		04748EE328BDF831009C9042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04748EE228BDF831009C9042 /* Assets.xcassets */; };
 		04748EE628BDF831009C9042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04748EE428BDF831009C9042 /* LaunchScreen.storyboard */; };
+		04748EEE28BE13FB009C9042 /* TestFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04748EED28BE13FB009C9042 /* TestFunction.swift */; };
+		04748EF528BE1604009C9042 /* hdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04748EB928BDF81E009C9042 /* hdSDK.framework */; };
+		04748EF628BE1604009C9042 /* hdSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04748EB928BDF81E009C9042 /* hdSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,28 @@
 			remoteGlobalIDString = 04748ED628BDF82E009C9042;
 			remoteInfo = cuongDemo;
 		};
+		04748EF728BE1604009C9042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04748EB028BDF81E009C9042 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04748EB828BDF81E009C9042;
+			remoteInfo = hdSDK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04748EF928BE1604009C9042 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04748EF628BE1604009C9042 /* hdSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04748EB928BDF81E009C9042 /* hdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +74,7 @@
 		04748EE228BDF831009C9042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04748EE528BDF831009C9042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04748EE728BDF831009C9042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04748EED28BE13FB009C9042 /* TestFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04748EF528BE1604009C9042 /* hdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +111,7 @@
 				04748EC728BDF81F009C9042 /* hdSDKTests */,
 				04748ED828BDF82E009C9042 /* cuongDemo */,
 				04748EBA28BDF81E009C9042 /* Products */,
+				04748EEF28BE15EC009C9042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +130,7 @@
 			children = (
 				04748EBC28BDF81E009C9042 /* hdSDK.h */,
 				04748EBD28BDF81E009C9042 /* hdSDK.docc */,
+				04748EED28BE13FB009C9042 /* TestFunction.swift */,
 			);
 			path = hdSDK;
 			sourceTree = "<group>";
@@ -127,6 +155,13 @@
 				04748EE728BDF831009C9042 /* Info.plist */,
 			);
 			path = cuongDemo;
+			sourceTree = "<group>";
+		};
+		04748EEF28BE15EC009C9042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +222,12 @@
 				04748ED328BDF82E009C9042 /* Sources */,
 				04748ED428BDF82E009C9042 /* Frameworks */,
 				04748ED528BDF82E009C9042 /* Resources */,
+				04748EF928BE1604009C9042 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04748EF828BE1604009C9042 /* PBXTargetDependency */,
 			);
 			name = cuongDemo;
 			productName = cuongDemo;
@@ -271,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04748EBE28BDF81E009C9042 /* hdSDK.docc in Sources */,
+				04748EEE28BE13FB009C9042 /* TestFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 04748ED628BDF82E009C9042 /* cuongDemo */;
 			targetProxy = 04748EEB28BDFFC6009C9042 /* PBXContainerItemProxy */;
+		};
+		04748EF828BE1604009C9042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04748EB828BDF81E009C9042 /* hdSDK */;
+			targetProxy = 04748EF728BE1604009C9042 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,6 +554,7 @@
 		04748ED128BDF81F009C9042 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6P8CG2H6F;
@@ -527,6 +571,7 @@
 		04748ED228BDF81F009C9042 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6P8CG2H6F;
