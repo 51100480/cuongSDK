@@ -20,6 +20,10 @@
 		04748EEE28BE13FB009C9042 /* TestFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04748EED28BE13FB009C9042 /* TestFunction.swift */; };
 		04748EF528BE1604009C9042 /* hdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04748EB928BDF81E009C9042 /* hdSDK.framework */; };
 		04748EF628BE1604009C9042 /* hdSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04748EB928BDF81E009C9042 /* hdSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04748F1C28BEFB96009C9042 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04748F1A28BEFB96009C9042 /* MainViewController.swift */; };
+		04748F1D28BEFB96009C9042 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04748F1B28BEFB96009C9042 /* MainViewController.xib */; };
+		04748F1F28BEFFC9009C9042 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04748F1E28BEFFC9009C9042 /* Extension.swift */; };
+		04748F2328BF057A009C9042 /* SSDKAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04748F2228BF04B5009C9042 /* SSDKAsset.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		04748EE528BDF831009C9042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04748EE728BDF831009C9042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04748EED28BE13FB009C9042 /* TestFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunction.swift; sourceTree = "<group>"; };
+		04748F1A28BEFB96009C9042 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04748F1B28BEFB96009C9042 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		04748F1E28BEFFC9009C9042 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		04748F2228BF04B5009C9042 /* SSDKAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SSDKAsset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				04748EBC28BDF81E009C9042 /* hdSDK.h */,
+				04748F2228BF04B5009C9042 /* SSDKAsset.xcassets */,
 				04748EBD28BDF81E009C9042 /* hdSDK.docc */,
 				04748EED28BE13FB009C9042 /* TestFunction.swift */,
+				04748F1A28BEFB96009C9042 /* MainViewController.swift */,
+				04748F1B28BEFB96009C9042 /* MainViewController.xib */,
+				04748F1E28BEFFC9009C9042 /* Extension.swift */,
 			);
 			path = hdSDK;
 			sourceTree = "<group>";
@@ -280,6 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04748F1D28BEFB96009C9042 /* MainViewController.xib in Resources */,
+				04748F2328BF057A009C9042 /* SSDKAsset.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04748F1C28BEFB96009C9042 /* MainViewController.swift in Sources */,
 				04748EBE28BDF81E009C9042 /* hdSDK.docc in Sources */,
 				04748EEE28BE13FB009C9042 /* TestFunction.swift in Sources */,
+				04748F1F28BEFFC9009C9042 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
