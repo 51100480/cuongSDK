@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "hdSDK"
-  spec.version      = "0.0.16"
+  spec.version      = "0.0.18"
   spec.summary      = "A short description of hdSDK."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/51100480/cuongSDK.git", :tag => "0.0.5" }
+  spec.source       = { :git => "https://github.com/51100480/cuongSDK.git", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -138,5 +138,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "IQKeyboardManagerSwift"
+  spec.dependency "ActiveLabel"
 
 end
