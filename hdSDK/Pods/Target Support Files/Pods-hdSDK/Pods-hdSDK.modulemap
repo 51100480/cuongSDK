@@ -1,0 +1,6 @@
+framework module Pods_hdSDK {
+  umbrella header "Pods-hdSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

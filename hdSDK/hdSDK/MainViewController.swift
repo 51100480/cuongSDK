@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 public class MainViewController: UIViewController {
 
+    @IBOutlet weak var tfInput: UITextField!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var lbText: UILabel!
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import hdSDK
+import IQKeyboardManagerSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -25,6 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window = window
                 window.makeKeyAndVisible()
             }
+        
+        IQKeyboardManager.shared.enable = true
+    
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

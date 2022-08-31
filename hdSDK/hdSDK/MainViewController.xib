@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="image" destination="m4M-bd-Pmk" id="dIf-za-dpt"/>
                 <outlet property="lbText" destination="QZ0-OR-krU" id="6m3-dp-82p"/>
+                <outlet property="tfInput" destination="eIh-Fb-qGr" id="w2u-V5-4rP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,13 +35,24 @@
                         <constraint firstAttribute="height" constant="140" id="V7S-1U-B6Y"/>
                     </constraints>
                 </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-Fb-qGr">
+                    <rect key="frame" x="10" y="802" width="394" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2KS-l4-Z8f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="eIh-Fb-qGr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="8fd-0h-GbV"/>
                 <constraint firstItem="m4M-bd-Pmk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Ba2-uC-JlS"/>
                 <constraint firstItem="m4M-bd-Pmk" firstAttribute="top" secondItem="QZ0-OR-krU" secondAttribute="bottom" constant="10" id="TO9-5O-JEY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QZ0-OR-krU" secondAttribute="trailing" constant="10" id="TfT-Eq-ghf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eIh-Fb-qGr" secondAttribute="trailing" constant="10" id="Un7-bE-bMA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eIh-Fb-qGr" secondAttribute="bottom" constant="10" id="dpY-iq-f4j"/>
                 <constraint firstItem="QZ0-OR-krU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="dw1-9d-1Q9"/>
                 <constraint firstItem="QZ0-OR-krU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="fJb-4C-kKt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m4M-bd-Pmk" secondAttribute="trailing" constant="10" id="rV4-iS-mpf"/>
