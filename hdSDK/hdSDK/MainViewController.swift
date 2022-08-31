@@ -20,6 +20,7 @@ public class MainViewController: UIViewController {
         image.image = UIImage(named: "thongbao", in: sdkBundle, compatibleWith: nil)
 
         // Do any additional setup after loading the view.
+        //
     }
 
 }
