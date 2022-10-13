@@ -1,16 +1,20 @@
 PODS:
+  - ActiveLabel (1.1.0)
   - IQKeyboardManagerSwift (6.5.10)
 
 DEPENDENCIES:
+  - ActiveLabel
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
+    - ActiveLabel
     - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
 
-PODFILE CHECKSUM: f94949fd623a6baa3322cb0ee0f087904cdbb28a
+PODFILE CHECKSUM: 221be273783110002e7453e017bdc8766d5e940b
 
 COCOAPODS: 1.11.3
