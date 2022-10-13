@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "hdSDK"
-  spec.version      = "0.0.19"
+  spec.version      = "0.0.21"
   spec.summary      = "A short description of hdSDK."
 
   # This description is used to generate tags and improve search results.
