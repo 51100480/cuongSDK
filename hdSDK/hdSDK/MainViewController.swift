@@ -9,8 +9,9 @@ import UIKit
 import IQKeyboardManagerSwift
 import ActiveLabel
 
-protocol MainViewControllerProtocol: class {
+public protocol MainViewControllerProtocol: AnyObject {
     func getTileOneApp() -> String
+    func getNameImage() -> String?
 }
 
 public class MainViewController: UIViewController {
@@ -19,7 +20,7 @@ public class MainViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var lbText: ActiveLabel!
     
-    weak var delegate: MainViewControllerProtocol?
+    public weak var delegate: MainViewControllerProtocol?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +29,16 @@ public class MainViewController: UIViewController {
         } else {
             lbText.text = "Hello Word"
         }
+        
+        if let ti = delegate?.getNameImage() {
+            image.image = UIImage(named: ti)
+        } else {
+            image.image = UIImage(named: "thongbao", in: sdkBundle, compatibleWith: nil)
+        }
        
-        image.image = UIImage(named: "thongbao", in: sdkBundle, compatibleWith: nil)
 
         // Do any additional setup after loading the view.
         //
-        
-        lbText.numberOfLines = 0
-        lbText.enabledTypes = [.mention, .hashtag, .url]
-        lbText.text = "This is a post with #hashtags and a @userhandle."
-        lbText.textColor = .black
-        lbText.handleHashtagTap { hashtag in
-            print("Success. You just tapped the \(hashtag) hashtag")
-        }
     }
 
 }
